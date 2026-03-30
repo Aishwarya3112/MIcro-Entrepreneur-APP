@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-heading: "Poppins", sans-serif;
+  
+  --color-bg-primary: #F9F7F4;
+  --color-bg-secondary: #F0EDE8;
+  --color-accent-primary: #4A3E35;
+  --color-accent-brown: #3D332B;
+  --color-accent-pink: #FF6A88;
+  --color-accent-orange: #FF8E53;
+  --color-text-primary: #2D2D2D;
+  --color-text-secondary: #6B6B6B;
+  --color-border-light: rgba(0, 0, 0, 0.05);
+  --color-navy-primary: #1A1A1A;
+  --color-navy-secondary: #242424;
+}
+
+@layer base {
+  body {
+    @apply bg-bg-primary text-text-primary font-sans;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading;
+  }
+}
+
+.shadow-soft {
+  box-shadow: 0 10px 30px -5px rgba(0, 0, 0, 0.05);
+}
+
+.gradient-primary {
+  background: linear-gradient(135deg, var(--color-accent-pink) 0%, var(--color-accent-orange) 100%);
+}
